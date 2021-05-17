@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
-* Студент: [Неопознанный енот](https://up.htmlacademy.ru/htmlcss/31/user/1089973).
-* Наставник: `Неизвестно`.
+* Студент: [Еров Павел ](https://up.htmlacademy.ru/htmlcss/31/user/1089973).
+* Наставник: [Калинин Александр](https://htmlacademy.ru/profile/id918955).
 
 ---
 
