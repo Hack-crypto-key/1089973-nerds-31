@@ -1,0 +1,158 @@
+:root {
+  --basic-black: #000000;
+  --basic-dark: #283136;
+  --basic-light-gray: #EEEEEE;
+  --basic-middledark-gray: #666666;
+  --basic-white: #FFFFFF;
+  --basic-red: #FB565A;
+  --basic-green: #00CA74;
+  --basic-yellow: #EFC849;
+}
+
+body {
+  min-width: 960px;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto"; 
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--basic-dark);
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.main-header {
+  background-color: var(--basic-light-gray)
+}
+
+.main-navigation {
+  font-size: 16px;
+  line-height: 30px;
+  color: var(--basic-black);
+  text-transform: uppercase;
+}
+
+.site-navigation {
+  list-style: none;
+}
+
+.site-navigation a {
+  color: var(--basic-black);
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus {
+  background-color: var(--basic-light-gray);
+}
+
+.basket-link {
+  color: var(--basic-black);
+}
+
+.main-header h1 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 55px;
+  line-height: 55px;
+  color: var(--basic-black);
+}
+
+.service-one h2 {
+  text-transform: uppercase;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.service-two h2 {
+  text-transform: uppercase;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.service-three h2 {
+  text-transform: uppercase;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.button {
+  font: inherit;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.info h2 {
+  font-size: 45px;
+  line-height: 45px;
+}
+
+.info h3 {
+  text-transform: uppercase;
+}
+
+.features figcaption {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.features-list {
+  list-style: none;
+}
+
+.features-item {
+  font-weight: bold;
+  font-size: 45px;
+  line-height: 64px;
+}
+
+.symbol {
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 40px;
+}
+
+.description {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: normal;
+}
+
+.naming {
+  text-transform: uppercase;
+}
+
+.contacts-phone {
+  color: inherit;
+}
+
+.footer-social ul {
+  list-style: none;
+}
+
+.social-button {
+  color: inherit;
+}
+
+.profitable h2 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 36px;
+  text-align: center;
+}
+
+.profitable p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+}
