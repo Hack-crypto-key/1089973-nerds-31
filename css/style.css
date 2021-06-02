@@ -1,3 +1,10 @@
+@font-face {
+  font-family: "Roboto";
+  src: local("Roboto"),
+       url("roboto.woff2") format("woff2"),
+       url("roboto.woff") format("woff");
+}
+
 :root {
   --basic-black: #000000;
   --basic-dark: #283136;
@@ -13,7 +20,7 @@ body {
   min-width: 960px;
   margin: 0;
   padding: 0;
-  font-family: "Roboto"; 
+  font-family: "Roboto", "Arial", sans-serif ; 
   font-size: 16px;
   line-height: 24px;
   color: var(--basic-dark);
@@ -39,8 +46,9 @@ img {
   text-transform: uppercase;
 }
 
-.site-navigation {
+.clear-list  {
   list-style: none;
+
 }
 
 .site-navigation a {
@@ -57,36 +65,43 @@ img {
 }
 
 .main-header h1 {
-  font-style: normal;
   font-weight: 500;
   font-size: 55px;
   line-height: 55px;
   color: var(--basic-black);
 }
 
-.service-one h2 {
+.general {
   text-transform: uppercase;
   font-size: 24px;
   line-height: 30px;
 }
 
-.service-two h2 {
-  text-transform: uppercase;
-  font-size: 24px;
-  line-height: 30px;
-}
-
-.service-three h2 {
-  text-transform: uppercase;
-  font-size: 24px;
-  line-height: 30px;
-}
-
-.button {
+.button-general {
   font: inherit;
   text-transform: uppercase;
   font-size: 16px;
   line-height: 18px;
+  color: var(--basic-white);
+  background-color: var(--basic-red);
+}
+
+.button-green {
+  font: inherit;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--basic-white);
+  background-color: var(--basic-green);
+}
+
+.button-yellow {
+  font: inherit;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--basic-white);
+  background-color: var(--basic-yellow);
 }
 
 .info h2 {
@@ -100,21 +115,17 @@ img {
 
 .features figcaption {
   text-transform: uppercase;
-  font-weight: bold;
-}
-
-.features-list {
-  list-style: none;
+  font-weight: 700;
 }
 
 .features-item {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 45px;
   line-height: 64px;
 }
 
 .symbol {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 26px;
   line-height: 40px;
 }
@@ -122,19 +133,18 @@ img {
 .description {
   font-size: 16px;
   line-height: 18px;
-  font-weight: normal;
+  font-weight: 400;
 }
 
 .naming {
   text-transform: uppercase;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
 }
 
 .contacts-phone {
   color: inherit;
-}
-
-.footer-social ul {
-  list-style: none;
 }
 
 .social-button {
@@ -142,17 +152,30 @@ img {
 }
 
 .profitable h2 {
-  font-style: normal;
-  font-weight: bold;
   font-size: 36px;
   line-height: 36px;
-  text-align: center;
 }
 
 .profitable p {
-  font-style: normal;
-  font-weight: normal;
   font-size: 16px;
   line-height: 22px;
-  text-align: center;
 }
+
+.modal {
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+  box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+.modal h2 {
+  font-size: 45px;
+  line-height: 53px;
+}
+
+.modal-form label {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 700;
+}
+
+
