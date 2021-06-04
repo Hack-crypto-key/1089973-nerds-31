@@ -107,20 +107,10 @@ img {
 }
 
 .button-green {
-  font: inherit;
-  text-transform: uppercase;
-  font-size: 16px;
-  line-height: 18px;
-  color: var(--basic-white);
   background-color: var(--basic-green);
 }
 
 .button-yellow {
-  font: inherit;
-  text-transform: uppercase;
-  font-size: 16px;
-  line-height: 18px;
-  color: var(--basic-white);
   background-color: var(--basic-yellow);
 }
 
