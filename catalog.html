@@ -3,18 +3,18 @@
   <head>
     <meta charset="utf-8">
     <title>Каталог: Нёрдс</title>
-    <link href="normalize.css" rel="stylesheet">
-    <link href="style.css" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
     <link rel="icon" href="img/favicons/favicon.ico">
     <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicons/180.png">
     <link rel="manifest" href="manifest.webmanifest">
   </head>
-  <body>
-    <header>
-      <nav>
+  <body class="page-body inner-page">
+    <header class="main-header">
+      <nav class="main-navigation">
         <a class="main-header-logo" href="index.html"><img src="img/logos/nerds-logo.svg" width="160" height="65" alt="логотип студии нёрдс"></a>
-        <ul>
+        <ul class="site-navigation clear-list">
           <li>
             <a href="#">Студия</a>
           </li>
@@ -31,26 +31,26 @@
             <a href="#">Контакты</a>
           </li>
         </ul>
-        <a href="#">Корзина</a>
+        <a class="basket-link clear-list" href="#">Корзина</a>
       </nav>
       <h1>Магазин готовых шаблонов</h1>
     </header>
-    <main>
-      <section>
+    <main  class="container">
+      <section class="product filter">
         <h2>Фильтр товаров</h2>
-        <form method="get" action="https://echo.htmlacademy.ru">
+        <form class="filter-form" method="get" action="https://echo.htmlacademy.ru">
           <fieldset>
-            <legend>Стоимость:</legend>
+            <legend class="filter-item naming">Стоимость:</legend>
             <p>
               <label for="appointment-low-price">от</label>
-              <input id="appointment-low-price" type="text" name="name" placeholder="0">
+              <input class="context" id="appointment-low-price" type="text" name="name" placeholder="0">
               <label for="appointment-high-price">до</label>
-              <input id="appointment-high-price" type="text" name="name" placeholder="15000">
+              <input class="context" id="appointment-high-price" type="text" name="name" placeholder="15000">
             </p>
           </fieldset>
           <fieldset>
-            <legend>Сетка:</legend>
-            <ul>
+            <legend class="filter-item naming">Сетка:</legend>
+            <ul class="clear-list">
               <li>
                 <input type="radio" name="net" value="adaptive" id="filter-adaptive">
                 <label for="filter-adaptive">Адаптивная</label>
@@ -68,8 +68,8 @@
             </ul>
           </fieldset>
           <fieldset>
-            <legend>Особенности:</legend>
-            <ul>
+            <legend class="filter-item naming">Особенности:</legend>
+            <ul class="clear-list">
               <li>
                 <input type="checkbox" name="Slider" id="filter-slider" checked>
                 <label for="filter-slider">Слайдер</label>
@@ -96,12 +96,12 @@
               </li>
             </ul>
           </fieldset>
-          <button type="submit">Показать</button>
+          <button class="button button-grey" type="submit">Показать</button>
         </form>
       </section>
-      <section>
-        <h2>Сортировать:</h2>
-        <ul>
+      <section class="sorting">
+        <h2 class="naming">Сортировать:</h2>
+        <ul class="sorting-type clear-list">
           <li>
             <a href="#">По цене</a>
           </li>
@@ -123,17 +123,17 @@
           </li>
         </ul>
       </section>
-      <section>
+      <section class="products">
         <h2>Товары:</h2>  
-        <ul>
+        <ul class="clear-list">
           <li>
-            <h3><a href="#">Sedona</a></h3>
-            <p>
+            <h3><a class="naming" href="#">Sedona</a></h3>
+            <p class="description text">
               Информационный сайт<br>
               для туристов
             </p>
             <p>
-              <a href="#">9 900 ₽</a>
+              <a class="button" href="#">9 900 ₽</a>
             </p>
             <p>
               <img src="img/img-sedona.jpg" width="358" height="578" alt="главная страница сайта Sedona, c фоновым рисунком гор">
@@ -141,13 +141,13 @@
           </li>
 
           <li>
-            <h3><a href="#">Pink app</a></h3>
-            <p>
+            <h3><a class="naming" href="#">Pink app</a></h3>
+            <p class="description text">
               Продуктовый лендинг<br>
               приложения для iOS и Android
             </p>
             <p>
-              <a href="#">9 900 ₽</a>
+              <a class="button" href="#">9 900 ₽</a>
             </p>
             <p>
               <img src="img/img-pink.jpg" width="358" height="578" alt="главная страница сайта Pink, с фоновым рисунком смартфона в руке">
@@ -175,13 +175,13 @@
             </p>
           </li>
           <li>
-            <h3><a href="#">Кваст</a></h3>
-            <p>
+            <h3><a class="naming" href="#">Кваст</a></h3>
+            <p class="description text">
               Промо-сайт производителя<br>
               крафтового кваса
             </p>
             <p>
-              <a href="#">9 900 ₽</a>
+              <a class="button" href="#">9 900 ₽</a>
             </p>
             <p>
               <img src="img/img-kvast.jpg" width="358" height="578" alt="страница сайта Кваст с каталогом товаров">
@@ -189,58 +189,58 @@
           </li>
         </ul>
       </section>
-      <section>
-        <ul>
+      <section class="page-switcher">
+        <ul class="clear-list">
           <li>
-            <a>1</a>
+            <a class="button button-grey">1</a>
           </li>
 
           <li>
-            <a href="#">2</a>
+            <a class="button button-grey" href="#">2</a>
           </li>
 
           <li>
-            <a href="#">3</a>
+            <a class="button button-grey" href="#">3</a>
           </li>
 
           <li>
-            <a href="#">Следующая</a>
+            <a class="button button-grey" href="#">Следующая</a>
           </li>
         </ul>
       </section>
     </main>
-    <footer>
-      <section>
+    <footer class="main-footer">
+      <section class="contacts">
         <h2>Контакты</h2>
         <img src="img/map.png" width="1440" height="416" alt="карта, отображающая расположение студии нёрдс">
         <img src="img/map-marker.png" width="231" height="190" alt="маркер, указывающий точное расположении студии нёрдс">
-        <p>
+        <p class="naming">
           nёrds design studio
         </p>
         <p> 
           наб. Реки Карповки,<br>5 лит П, Санкт-Петербург
         </p>
         <p> 
-          <a href="tel:+78005558628">+7 800 555-86-28</a>
+          <a class="contacts-phone" href="tel:+78005558628">+7 800 555-86-28</a>
         </p>
-        <a href="#">Напишите нам</a>
+        <a class="button" href="#">Напишите нам</a>
       </section>
-      <section>
-        <ul>
+      <section class="footer-social">
+        <ul class="clear-list">
           <li>
-            <a href="#">Вконтакте</a>
+            <a class="social-button" href="#">Вконтакте</a>
           </li>
 
           <li>
-            <a href="#">Фейсбук</a>
+            <a class="social-button" href="#">Фейсбук</a>
           </li>
 
           <li>
-            <a href="#">Инстаграм</a>
+            <a class="social-button" href="#">Инстаграм</a>
           </li>
         </ul>
       </section>
-      <section>
+      <section class="profitable">
         <h2>Давайте дружить, это выгодно!</h2>
         <p>
           Скидка 10% для друзей из социальных сетей.

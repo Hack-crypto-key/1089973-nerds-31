@@ -46,6 +46,8 @@ body {
   color: var(--basic-dark);
 }
 
+
+
 a {
   text-decoration: none;
 }
@@ -73,6 +75,10 @@ img {
 
 .site-navigation a {
   color: var(--basic-black);
+}
+
+.sorting a {
+  color: inherit; 
 }
 
 .site-navigation a:hover,
@@ -114,6 +120,12 @@ img {
   background-color: var(--basic-yellow);
 }
 
+.button-grey {
+  font-weight: 500;
+  color: var(--basic-black);
+  background-color: var(--basic-light-gray);
+}
+
 .info h2 {
   font-size: 45px;
   line-height: 45px;
@@ -146,11 +158,16 @@ img {
   font-weight: 400;
 }
 
+.text {
+  color: var(--basic-middledark-gray);
+}
+
 .naming {
   text-transform: uppercase;
   font-size: 18px;
   line-height: 30px;
   font-weight: 700;
+  color: var(--basic-black);
 }
 
 .contacts-phone {
@@ -186,6 +203,20 @@ img {
   font-size: 16px;
   line-height: 18px;
   font-weight: 700;
+}
+
+.page-switcher a {
+  color: inherit;
+}
+
+.context {
+  background-color: var(--basic-light-gray);
+}
+
+.sorting-type {
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
 }
 
 
