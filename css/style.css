@@ -36,17 +36,19 @@
   --basic-yellow: #EFC849;
 }
 
-body {
-  min-width: 960px;
+.page-body {
+  min-width: 1160px;
   margin: 0;
   padding: 0;
   font-family: "Roboto", "Arial", sans-serif; 
   font-size: 16px;
   line-height: 24px;
   color: var(--basic-dark);
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
 }
-
-
 
 a {
   text-decoration: none;
@@ -58,19 +60,39 @@ img {
 }
 
 .main-header {
-  background-color: var(--basic-light-gray)
+  background-color: var(--basic-light-gray);
+  margin-bottom: 70px;
+  outline: 5px solid rgba(0, 255, 0, 0.3);
+  outline-offset: -5px;
+}
+
+.main-header-logo {
+  outline: 5px solid rgba(255, 0, 0, 0.3);
+  outline-offset: -5px;
 }
 
 .main-navigation {
+  display: grid;
+  grid-template-columns: 170px 1fr min-content;
   font-size: 16px;
   line-height: 30px;
   color: var(--basic-black);
   text-transform: uppercase;
+  width: 1160px;
+  margin: 0 auto;
+  padding: 0 10px;
 }
 
 .clear-list  {
   list-style: none;
 
+}
+
+.site-navigation {
+  margin: 0;
+  padding: 0;
+  outline: 5px solid rgba(0, 255, 255, 0.3);
+  outline-offset: -5px;
 }
 
 .site-navigation a {
@@ -127,12 +149,18 @@ img {
 }
 
 .info h2 {
+  font-weight: 500;
   font-size: 45px;
   line-height: 45px;
 }
 
 .info h3 {
   text-transform: uppercase;
+}
+
+.info-list {
+  margin: 0px;
+  padding: 0px;
 }
 
 .features figcaption {
@@ -219,4 +247,68 @@ img {
   text-transform: uppercase;
 }
 
+.page {
+  height: 100%;
+}
+
+.user-navigation {
+  outline: 5px solid rgba(255, 0, 255, 0.3);
+  outline-offset: -5px;
+}
+
+.main-chapter {
+  outline: 5px solid rgba(128, 128 , 128);
+  outline-offset: -5px;
+}
+
+.services {
+  display: grid;
+  margin-bottom: 80px;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 100px;
+  padding-right: 30px;
+  outline: 5px solid rgba(255, 0, 0 , 0.3);
+}
+
+.wrapper {
+  width: 1160px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.block-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 73px;
+}
+
+.clients-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin: 0px;
+  padding: 0px;
+  column-gap: 106px;
+  outline: 5px solid rgba(0, 255, 0, 0.3);
+  outline-offset: -5px;
+  margin-bottom: 80px;
+}
+
+.block-social {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.list-social {
+  margin: 0px;
+  padding: 0px;
+}
+
+.contacts {
+  margin-bottom: 68px;
+}
+
+.features {
+  display: grid;
+  justify-self: right;
+}
 
