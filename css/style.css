@@ -37,7 +37,7 @@
 }
 
 .page-body {
-  min-width: 1160px;
+  min-width: 1200px;
   margin: 0;
   padding: 0;
   font-family: "Roboto", "Arial", sans-serif; 
@@ -62,8 +62,6 @@ img {
 .main-header {
   background-color: var(--basic-light-gray);
   margin-bottom: 70px;
-  outline: 5px solid rgba(0, 255, 0, 0.3);
-  outline-offset: -5px;
 }
 
 .main-header-logo {
@@ -78,19 +76,15 @@ img {
   line-height: 30px;
   color: var(--basic-black);
   text-transform: uppercase;
-  width: 1160px;
-  margin: 0 auto;
-  padding: 0 10px;
 }
 
 .clear-list  {
+  margin: 0;
+  padding: 0;
   list-style: none;
-
 }
 
 .site-navigation {
-  margin: 0;
-  padding: 0;
   outline: 5px solid rgba(0, 255, 255, 0.3);
   outline-offset: -5px;
 }
@@ -156,11 +150,6 @@ img {
 
 .info h3 {
   text-transform: uppercase;
-}
-
-.info-list {
-  margin: 0px;
-  padding: 0px;
 }
 
 .features figcaption {
@@ -256,11 +245,6 @@ img {
   outline-offset: -5px;
 }
 
-.main-chapter {
-  outline: 5px solid rgba(128, 128 , 128);
-  outline-offset: -5px;
-}
-
 .services {
   display: grid;
   margin-bottom: 80px;
@@ -273,34 +257,35 @@ img {
 .wrapper {
   width: 1160px;
   margin: 0 auto;
-  padding: 0 10px;
+  padding: 0 20px;
 }
 
 .block-info {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  margin-bottom: 73px;
+  
+  outline: 5px solid rgba(255, 127, 80);
 }
 
 .clients-list {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  margin: 0px;
-  padding: 0px;
   column-gap: 106px;
   outline: 5px solid rgba(0, 255, 0, 0.3);
   outline-offset: -5px;
-  margin-bottom: 80px;
+}
+
+.clients {
+  margin-top: 73px;
+  outline: 5px solid rgba(255, 0, 255, 0.3);
+  outline-offset: -5px;
 }
 
 .block-social {
   display: grid;
   grid-template-columns: 1fr 1fr;
-}
-
-.list-social {
-  margin: 0px;
-  padding: 0px;
+  outline: 5px solid rgba(147, 112, 219);
+  outline-offset: -5px;
 }
 
 .contacts {
@@ -311,4 +296,13 @@ img {
   display: grid;
   justify-self: right;
 }
+
+.main-footer {
+  outline: 5px solid rgba(0, 139, 139);
+  outline-offset: -5px;
+  margin-top: 80px;
+}
+
+
+
 
