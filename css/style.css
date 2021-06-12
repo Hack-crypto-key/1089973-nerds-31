@@ -50,6 +50,10 @@
   align-content: start;
 }
 
+.inner-page h1 {
+  text-align: center;
+}
+
 a {
   text-decoration: none;
 }
@@ -61,7 +65,7 @@ img {
 
 .main-header {
   background-color: var(--basic-light-gray);
-  margin-bottom: 70px;
+  margin-bottom: 80px;
 }
 
 .main-header-logo {
@@ -303,6 +307,35 @@ img {
   margin-top: 80px;
 }
 
+.inner-filter {
+  outline: 5px solid rgba(0, 139, 139);
+  outline-offset: -5px;
+}
 
+.sorting {
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  outline: 5px solid rgba(147, 112, 219);
+  outline-offset: -5px;
+  margin-bottom: 48px;
+}
+
+.products {
+  outline: 5px solid rgba(255, 0, 0 , 0.3);
+}
+
+.block-filter {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  align-content: start;
+}
+
+.block-sorting {
+  margin-left: 141px;
+}
+
+.page-switcher {
+  margin-top: 55px;
+}
 
 
