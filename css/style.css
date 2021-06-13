@@ -320,11 +320,6 @@ img {
   margin-bottom: 48px;
 }
 
-.products {
-  display: grid;
-  outline: 5px solid rgba(255, 0, 0 , 0.3);
-}
-
 .block-filter {
   display: grid;
   grid-template-columns: 260px 1fr;
@@ -338,5 +333,14 @@ img {
 .page-switcher {
   margin-top: 55px;
 }
+
+.block-products {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 41px;
+  outline: 5px solid rgba(147, 112, 219);
+  outline-offset: -5px;
+}
+
 
 
