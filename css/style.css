@@ -64,8 +64,13 @@ img {
 }
 
 .main-header {
+  height: 545px;
   background-color: var(--basic-light-gray);
   margin-bottom: 80px;
+}
+
+.main-chapter {
+  padding-top: 78px;
 }
 
 .main-header-logo {
