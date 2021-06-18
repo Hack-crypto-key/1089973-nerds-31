@@ -184,17 +184,17 @@
         <div class="block-social">
           <section class="footer-social">
             <ul class="list-social clear-list">
-              <li>
-                <a class="social-button" href="#">Вконтакте</a>
-              </li>
-
-              <li>
-                <a class="social-button" href="#">Фейсбук</a>
-              </li>
-
-              <li>
-                <a class="social-button" href="#">Инстаграм</a>
-              </li>
+                <li>
+                  <a class="social-button first-social" href="#">Вконтакте</a>
+                </li>
+                         
+                <li>
+                  <a class="social-button second-social" href="#">Фейсбук</a>
+                </li>
+            
+                <li>
+                  <a class="social-button third-social" href="#">Инстаграм</a>
+                </li>
             </ul>
           </section>
           <section class="profitable">
@@ -209,21 +209,23 @@
     <section class="modal">
       <h2>Напишите нам</h2>
       <form class="modal-form" action="https://echo.htmlacademy.ru" method="post">
-        <p class="modal-item">
-          <label for="modal-name">Ваше имя:</label>
-          <input id="modal-name" type="text" name="name" placeholder="Имя Фамилия">
-        </p>
-        <p class="modal-item">
-          <label for="modal-email">Ваш email:</label>
-          <input id="modal-email" type="email" name="mail" placeholder="email@example.com">
-        </p>
-        <p class="modal-item">
-          <label for="modal-text">Текст письма:</label>
-          <input id="modal-text" type="text" name="text" placeholder="В свободной форме">
-        </p>
-        <button class="button" type="submit">Отправить</button> 
-      </form>
-      <button class="modal-close" type="button">Закрыть</button>  
+        <div class="block-modal">
+          <p class="modal-item first-form">
+            <label for="modal-name">Ваше имя:</label>
+            <textarea id="modal-name" name="name" placeholder="Имя Фамилия"></textarea>
+          </p>
+          <p class="modal-item second-form">
+            <label for="modal-email">Ваш email:</label>
+            <textarea id="modal-email" name="mail" placeholder="email@example.com"></textarea>
+          </p>
+          <p class="modal-item third-form">
+            <label for="modal-text">Текст письма:</label>
+            <textarea id="modal-text" name="text" placeholder="В свободной форме"></textarea>
+          </p>
+          <button class="button button-form" type="submit">Отправить</button>
+          <button class="modal-close" type="button">Закрыть</button> 
+        </div>
+      </form>  
     </section>
   </body>
 </html>

@@ -34,6 +34,7 @@
   --basic-red: #FB565A;
   --basic-green: #00CA74;
   --basic-yellow: #EFC849;
+  --basic-gray: #D7DCDE;
 }
 
 .page-body {
@@ -69,6 +70,10 @@ img {
   margin-bottom: 80px;
 }
 
+.inner-header {
+  height: 355px;
+}
+
 .main-chapter {
   padding-top: 78px;
 }
@@ -85,6 +90,10 @@ img {
   font-weight: 500;
   color: var(--basic-black);
   text-transform: uppercase;
+}
+
+.inner-chapter {
+  padding-top: 37px;
 }
 
 .clear-list  {
@@ -216,20 +225,23 @@ img {
   display: flex;
   flex-wrap: wrap;
   padding-right: 50px;
-  width: 660px; 
+  width: 660px;
 }
 
 .profitable h2 {
   font-size: 36px;
-  line-height: 36px;
+  line-height: 0;
 }
 
 .profitable p {
   font-size: 16px;
-  line-height: 22px;
+  line-height: 0;
 }
 
 .modal {
+  width: 960px;
+  padding-left: 100px;
+  padding-right: 100px;
   color: var(--basic-black);
   background-color: var(--basic-white);
   box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.4);
@@ -237,13 +249,19 @@ img {
 
 .modal h2 {
   font-size: 45px;
-  line-height: 53px;
+  line-height: 37px;
 }
 
 .modal-form label {
   font-size: 16px;
   line-height: 18px;
   font-weight: 700;
+  padding-bottom: 9px;
+}
+
+.modal-form textarea {
+  border: 2px solid;
+  border-color: var(--basic-gray);
 }
 
 .page-switcher a {
@@ -288,8 +306,8 @@ img {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  flex-wrap: wrap; 
   width: 1160px;
-  height: 184px;
   outline: 5px solid rgba(147, 112, 219);
   outline-offset: -5px;
 }
@@ -362,12 +380,60 @@ img {
   align-items: center;
   padding-top: 25px;
   width: 263px;
-  height: 81px;
+  outline: 5px solid rgba(147, 112, 219);
+  outline-offset: -5px;
 }
 
-.modal {
-  display: block;
-  width: 960px;
+.block-modal {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.block-switcher {
+  display: flex;
+  justify-content: space-between;
+  width: 435px;
+}
+
+.modal-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.first-form {
+  width: 47%;
+}
+
+.second-form {
+  width: 47%;
+}
+
+.third-form {
+  width: 100%;
+  margin-top: 34px;
+}
+
+.button-form {
+  margin-top: 40px;
+}
+
+.first-social {
+  height: 81px;
+  outline: 5px solid rgb(71, 173, 134);
+  outline-offset: -5px;
+}
+
+.second-social {
+  height: 81px;
+  outline: 5px solid rgb(186, 214, 61);
+  outline-offset: -5px;
+}
+
+.third-social {
+  height: 81px;
+  outline: 5px solid rgb(179, 26, 115);
+  outline-offset: -5px;
 }
 
 
