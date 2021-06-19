@@ -35,6 +35,8 @@
   --basic-green: #00CA74;
   --basic-yellow: #EFC849;
   --basic-gray: #D7DCDE;
+  --basic-middleblack: rgba(0, 0, 0, 0.4);
+  --basic-gainsboro: #E1E1E1; 
 }
 
 .page-body {
@@ -226,16 +228,17 @@ img {
   flex-wrap: wrap;
   padding-right: 50px;
   width: 660px;
+  margin-bottom: 74px;
 }
 
 .profitable h2 {
   font-size: 36px;
-  line-height: 0;
+  line-height: 36px;
 }
 
 .profitable p {
   font-size: 16px;
-  line-height: 0;
+  line-height: 22px; 
 }
 
 .modal {
@@ -244,7 +247,7 @@ img {
   padding-right: 100px;
   color: var(--basic-black);
   background-color: var(--basic-white);
-  box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 20px 40px var(--basic-middleblack);
 }
 
 .modal h2 {
@@ -308,8 +311,6 @@ img {
   align-items: center;
   flex-wrap: wrap; 
   width: 1160px;
-  outline: 5px solid rgba(147, 112, 219);
-  outline-offset: -5px;
 }
 
 .clients {
@@ -365,8 +366,6 @@ img {
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 41px;
-  outline: 5px solid rgba(147, 112, 219);
-  outline-offset: -5px;
 }
 
 .features-list {
@@ -380,8 +379,7 @@ img {
   align-items: center;
   padding-top: 25px;
   width: 263px;
-  outline: 5px solid rgba(147, 112, 219);
-  outline-offset: -5px;
+  margin-bottom: 74px;
 }
 
 .block-modal {
@@ -418,23 +416,19 @@ img {
   margin-top: 40px;
 }
 
-.first-social {
+.general-social {
+  display: block;
+  width: 81px;
   height: 81px;
-  outline: 5px solid rgb(71, 173, 134);
-  outline-offset: -5px;
+  background-color: var(--basic-gainsboro);
+  border-radius: 50%;
 }
 
-.second-social {
-  height: 81px;
-  outline: 5px solid rgb(186, 214, 61);
-  outline-offset: -5px;
-}
 
-.third-social {
-  height: 81px;
-  outline: 5px solid rgb(179, 26, 115);
-  outline-offset: -5px;
-}
+
+
+
+
 
 
 
