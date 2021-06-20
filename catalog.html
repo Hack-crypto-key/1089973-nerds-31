@@ -37,7 +37,7 @@
           </div> 
         </nav>
         <div class="inner-chapter">
-        <h1>Магазин готовых шаблонов</h1>
+          <h1>Магазин готовых шаблонов</h1>
         </div>
       </div>
     </header>
@@ -47,12 +47,12 @@
           <section class="product filter">
             <h2>Фильтр товаров</h2>
             <form class="filter-form" method="get" action="https://echo.htmlacademy.ru">
-              <fieldset>
+              <fieldset class="filter-price">
                 <legend class="filter-item naming">Стоимость:</legend>
                 <p>
                   <label for="appointment-low-price">от</label>
                   <input class="context" id="appointment-low-price" type="text" name="name" placeholder="0">
-                  <label for="appointment-high-price">до</label>
+                  <label class="space-between-price" for="appointment-high-price">до</label>
                   <input class="context" id="appointment-high-price" type="text" name="name" placeholder="15000">
                 </p>
               </fieldset>
@@ -104,7 +104,7 @@
                   </li>
                 </ul>
               </fieldset>
-              <button class="button button-grey" type="submit">Показать</button>
+              <button class="button button-grey button-show" type="submit">Показать</button>
             </form>
           </section>
           <div class="block-sorting">
@@ -201,19 +201,19 @@
             <section class="page-switcher">
               <ul class="block-switcher clear-list">
                 <li>
-                  <a class="button button-grey">1</a>
+                  <a class="button button-grey button-switcher">1</a>
                 </li>
 
                 <li>
-                  <a class="button button-grey" href="#">2</a>
+                  <a class="button button-grey button-switcher" href="#">2</a>
                 </li>
 
                 <li>
-                  <a class="button button-grey" href="#">3</a>
+                  <a class="button button-grey button-switcher" href="#">3</a>
                 </li>
 
                 <li>
-                  <a class="button button-grey" href="#">Следующая</a>
+                  <a class="button button-grey next-button" href="#">Следующая</a>
                 </li>
               </ul>
             </section>
@@ -242,15 +242,15 @@
           <section class="footer-social">
             <ul class="list-social clear-list">
               <li>
-                <a class="social-button" href="#">Вконтакте</a>
+                <a class="social-button general-social" href="#">Вконтакте</a>
               </li>
 
               <li>
-                <a class="social-button" href="#">Фейсбук</a>
+                <a class="social-button general-social" href="#">Фейсбук</a>
               </li>
 
               <li>
-                <a class="social-button" href="#">Инстаграм</a>
+                <a class="social-button general-social" href="#">Инстаграм</a>
               </li>
             </ul>
           </section>
