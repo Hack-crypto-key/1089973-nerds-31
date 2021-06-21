@@ -280,6 +280,7 @@ img {
 .sorting-type {
   display: flex; 
   justify-content: space-around;
+  flex-wrap: wrap;
   font-size: 14px;
   line-height: 18px;
   width: 359px;
@@ -455,6 +456,10 @@ img {
   width: 260px;
   text-align: center;
   margin-top: 50px;
+}
+
+.visually-hidden {
+  visibility: hidden;
 }
 
 
