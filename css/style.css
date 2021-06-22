@@ -284,8 +284,9 @@ img {
   font-size: 14px;
   line-height: 18px;
   width: 359px;
-  padding-left: 266px;
+  margin-left: auto;
   text-transform: uppercase;
+  padding-top: 22px;
 }
 
 .page {
@@ -396,6 +397,20 @@ img {
 .modal-item {
   display: flex;
   flex-direction: column;
+}
+
+.modal-item  input {
+  padding-top: 16px;
+  padding-right: 14px;
+  padding-bottom: 16px;
+  padding-left: 16px;
+}
+
+.modal-item textarea {
+  padding-top: 16px;
+  padding-right: 14px;
+  padding-bottom: 84px;
+  padding-left: 16px; 
 }
 
 .first-form {
