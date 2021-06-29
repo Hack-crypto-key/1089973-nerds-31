@@ -480,6 +480,7 @@ img {
   width: 1160px;
   justify-content: space-between;
   border-top: 2px solid var(--basic-light-gray);
+  padding-top: 39px;
 }
 
 .clients-list {
@@ -820,24 +821,6 @@ img {
   background-color: var(--gray);
 }
 
-
-/* .slide-first {
-  background-image: url("../img/nerds-index-slide1.png");
-  background-repeat: no-repeat;
-  background-position: right 50px bottom;
-} 
-
-.slide-second {
-  background-image: url("../img/nerds-index-slide2.png");
-  background-repeat: no-repeat;
-  background-position: right 50px bottom;
-}
-
-.slide-third {
-  background-image: url("../img/nerds-index-slide3.png");
-  background-repeat: no-repeat;
-  background-position: right 50px bottom;
-} */
 
 
 
