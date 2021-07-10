@@ -429,6 +429,8 @@ img {
 }
 
 .text {
+  margin-left: -4px;
+  margin-bottom: 32px;
   color: var(--basic-middledark-gray);
 }
 
@@ -740,20 +742,28 @@ img {
   bottom: 29px;
   left: 0px;
   width: 360px;
-  padding-bottom: 20px;
-  padding-top: 16px;
+  padding-bottom: 19px;
+  padding-top: 7px;
+}
+
+.block-sedona h3 {
+  margin-bottom: 12px;
 }
 
 .block-pink {
-  display: none;
+  display:none;
   content: "";
   position: absolute;
   background: var(--basic-light-gray);
   bottom: 22px;
-  left: 1px;
+  left: -1px;
   width: 360px;
-  padding-bottom: 28px;
-  padding-top: 15px;
+  padding-bottom: 26px;
+  padding-top: 26px;
+}
+
+.block-pink h3 {
+  margin: 0;
 }
 
 .block-pink .naming:hover,
@@ -769,20 +779,24 @@ img {
 }
 
 .block-kvast {
-  display: none;
+  display:none;
   content: "";
   position: absolute;
   background: var(--basic-light-gray);
   bottom: 22px;
-  left: 1px;
+  left: -1px;
   width: 360px;
-  padding-bottom: 28px;
-  padding-top: 18px;
+  padding-bottom: 24px;
+  padding-top: 28px;
+}
+
+.block-kvast h3 {
+  margin: 0;
 }
 
 .button-catalog {
-  margin-right: 80px;
-  margin-left: 60px;
+    margin-left: 80px;
+    width: 199px;
 }
 
 .button-catalog:hover {
