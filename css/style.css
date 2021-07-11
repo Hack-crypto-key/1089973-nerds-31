@@ -473,13 +473,24 @@ img {
 }
 
 .modal {
+  position: fixed;
+  z-index: 3;
   width: 960px;
   padding-left: 100px;
   padding-right: 100px;
+  padding-bottom: 68px;
+  top: 78px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  bottom: auto;
   color: var(--basic-black);
   background-color: var(--basic-white);
   box-shadow: 0 20px 40px var(--basic-middleblack);
   box-sizing: border-box;
+  background-position: 0 0;
+  background-repeat: repeat;
 }
 
 .modal h2 {
@@ -640,96 +651,59 @@ img {
   margin-top: -22px;
 }
 
+
+
 .block-sorting {
   margin-left: 141px;
 }
 
 .page-switcher {
-  margin-top: 33px;
+  margin-top: 56px;
 }
 
 .block-products {
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 41px;
+  row-gap: 31px;
 }
 
 .catalog-item {
   position: relative;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
   width: 360px;
-  padding-top: 0px;
-}
-
-.second-row {
-  padding-top: 11px;
+  text-align: center;
+  padding-top: 0;
+  border-radius: 5px;
+  overflow: hidden;
 }
 
 .catalog-item img {
-  padding-top: 23px;
+  display: block;
+}
+
+.catalog-item p {
+  margin: 0;
+  padding-top: 40px;
 }
 
 .catalog-item::before {
   content: "";
   position: absolute;
-  width: 360px;
+  width: 100%;
   height: 40px;
   background: var(--basic-light-gray);
   background-image: url("../img/browser-white.svg");
   background-position: 0 0;
+  left: 0;
 }
 
-.second-row {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  width: 360px;
-  padding-top: 32px;
-}
-
-.second-row::before {
-  content: "";
-  position: absolute;
-  width: 360px;
-  height: 40px;
-  background: var(--basic-light-gray);
-  background-image: url("../img/browser-white.svg");
-  background-position: 0 0;
-  top: 8px;
-}
-
-.third-row {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  width: 360px;
-  padding-top: 32px;
-}
-
-.third-row::before {
-  content: "";
-  position: absolute;
-  width: 360px;
-  height: 40px;
-  background: var(--basic-light-gray);
-  background-image: url("../img/browser-white.svg");
-  background-position: 0 0;
-  top: 8px;
-}
-
-.catalog-item:hover::before,
-.second-row:hover::before,
-.third-row:hover::before {
+.catalog-item:hover::before {
   background-color: var(--matterhorn);
 }
 
 .catalog-item:hover .block-sedona,
 .catalog-item:hover .block-pink,
-.third-row:hover .block-kvast {
+.catalog-item:hover .block-kvast {
   display: block;
   cursor: pointer;
 }
@@ -739,64 +713,67 @@ img {
   content: "";
   position: absolute;
   background: var(--basic-light-gray);
-  bottom: 29px;
-  left: 0px;
-  width: 360px;
+  bottom: 1px;
+  left: -1px;
+  width: 100%;
   padding-bottom: 19px;
-  padding-top: 7px;
+  padding-top: 5px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 
 .block-sedona h3 {
-  margin-bottom: 12px;
+  margin-bottom: -34px;
 }
 
 .block-pink {
-  display:none;
+  display: none;
   content: "";
   position: absolute;
   background: var(--basic-light-gray);
-  bottom: 22px;
+  bottom: 1px;
   left: -1px;
-  width: 360px;
-  padding-bottom: 26px;
-  padding-top: 26px;
+  width: 100%;
+  padding-bottom: 19px;
+  padding-top: 5px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 
 .block-pink h3 {
-  margin: 0;
+  margin-bottom: -34px;
 }
 
-.block-pink .naming:hover,
-.block-sedona .naming:hover,
-.block-kvast .naming:hover {
+.general-block-products .naming:hover {
   color: var(--basic-red);
-}
+} 
 
-.block-pink .naming:active,
-.block-sedona .naming:active,
-.block-kvast .naming:active {
+.general-block-products .naming:active {
   color: var(--basic-lightblack);
 }
 
 .block-kvast {
-  display:none;
+  display: none;
   content: "";
   position: absolute;
   background: var(--basic-light-gray);
-  bottom: 22px;
+  bottom: 1px;
   left: -1px;
-  width: 360px;
-  padding-bottom: 24px;
-  padding-top: 28px;
+  width: 100%;
+  padding-bottom: 19px;
+  padding-top: 5px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 
 .block-kvast h3 {
-  margin: 0;
+  margin-bottom: -34px;
 }
 
 .button-catalog {
-    margin-left: 80px;
-    width: 199px;
+  margin-left: 80px;
+  width: 199px;
+  margin-bottom: 21px;
 }
 
 .button-catalog:hover {
@@ -839,6 +816,11 @@ img {
   padding-right: 14px;
   padding-bottom: 16px;
   padding-left: 16px;
+  border-radius: 3px;
+}
+
+input:required {
+  border-color: var(--basic-cinnabar);
 }
 
 .modal-item input:hover,
@@ -856,6 +838,7 @@ img {
   padding-right: 14px;
   padding-bottom: 84px;
   padding-left: 16px;
+  border-radius: 3px;
 }
 
 .first-form {
@@ -895,11 +878,6 @@ img {
   padding: 0;
   margin-top: 55px;
   border: none;
-  margin-left: 30px;
-}
-
-.filter-net legend {
-  margin-left: -30px;
 }
 
 .filter-net li {
@@ -912,7 +890,7 @@ img {
   display: block;
   cursor: pointer;
   user-select: none;
-  padding-left: 7px;
+  padding-left: 35px;
 }
 
 .filter-disabled {
@@ -945,6 +923,7 @@ filter-input-radio:disabled + label::after {
   border: 4px solid var(--simple-gray);
   border-radius: 50%;
   opacity: 0.8;
+  margin-left: 28px;
 }
 
 .filter-input-checkbox + label:hover::before {
@@ -961,6 +940,7 @@ filter-input-radio:disabled + label::after {
   background-color: var(--simple-gray);
   border-radius: 50%;
   opacity: 0.8;
+  margin-left: 28px;
 }
 
 .filter-option label {
@@ -978,7 +958,7 @@ filter-input-radio:disabled + label::after {
   top: 0;
   width: 23px;
   height: 23px;
-  background-image: url("../img/Square.svg");
+  background-image: url("../img/square.svg");
   opacity: 0.5;
 }
 
@@ -1097,15 +1077,15 @@ filter-input-radio:disabled + label::after {
 }
 
 .price-controls input {
-  width: 54px;
+  width: 60px;
   padding: 9px;
   margin-left: 12px;
   text-align: center;
   color: #283136;
   border: none;
   border-radius: 5px;
-  padding-left: 16px;
-  padding-right: 7px;
+  padding-left: 10px;
+  padding-right: 6px;
   background: #f1f1f1;
 }
 
@@ -1296,7 +1276,9 @@ filter-input-radio:disabled + label::after {
 .address p {margin: 0px;}
 
 .modal-close {
-  transform: translateY(-395px) translateX(10px);
+  position: absolute;
+  top: 43px;
+  right: 92px;
   opacity: 0.3;
   cursor: pointer;
 }
