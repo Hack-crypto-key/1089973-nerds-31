@@ -233,20 +233,25 @@ img {
   margin: 0;
 }
 
-.sorting a {
+.sorting-type a {
   color: inherit;
   opacity: 0.3;
 }
 
-.sorting a:hover {
+.sorting-type a:hover {
   opacity: 0.6;
 }
 
-.sorting a:active {
+.sorting-type a:active {
   opacity: 1;
 }
 
-.sorting-type-current a {
+.sorting-type .sorting-type-current {
+  opacity: 1;
+}
+
+.sorting-type .arrow-active {
+  fill: var(--ivory-black);
   opacity: 1;
 }
 
@@ -626,7 +631,7 @@ img {
 
 .inner-footer {
   margin-top: 59px;
-  padding-bottom: 0px;
+  padding-bottom: 68px;
 }
 
 .sorting {
@@ -1287,15 +1292,3 @@ img {
   margin-bottom: 24px;
 }
 
-.arrow-down,
-.arrow-up {
-  opacity: 0.2;
-}
-
-.arrow-up:hover {
-  opacity: 1;
-}
-
-.sort-arrow-active {
-  fill: var(--ivory-black);
-}
