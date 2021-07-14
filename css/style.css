@@ -965,6 +965,7 @@ img {
   top: 0;
   width: 23px;
   height: 23px;
+  background-image: url("../img/square.svg");
   opacity: 0.5;
 }
 
