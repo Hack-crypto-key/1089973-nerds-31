@@ -255,9 +255,22 @@ img {
   opacity: 1;
 }
 
-.sorting-type .arrow-active {
+.sorting-arrow .arrow-active {
   fill: var(--ivory-black);
   opacity: 1;
+}
+
+.sorting-arrow a:hover {
+  opacity: 0.6;
+}
+
+.sorting-arrow a:active {
+  opacity: 1;
+}
+
+.sorting-arrow .arrow-up {
+  color: inherit;
+  opacity: 0.3;
 }
 
 .site-navigation a:hover,
@@ -526,9 +539,22 @@ img {
   flex-wrap: wrap;
   font-size: 14px;
   line-height: 18px;
-  margin-left: auto;
   text-transform: uppercase;
   padding-top: 5px;
+  margin-left: -361px;
+}
+
+.sorting-arrow {
+  display: flex;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  margin-top: -25px;
+  margin-left: 719px;
+}
+
+.sorting-arrow li:nth-child(1) {
+  padding-right: 19px;
 }
 
 .sorting-type li:nth-child(1) {
@@ -939,7 +965,6 @@ img {
   top: 0;
   width: 23px;
   height: 23px;
-  background-image: url("../img/square.svg");
   opacity: 0.5;
 }
 
@@ -1061,12 +1086,12 @@ img {
   padding: 9px;
   margin-left: 12px;
   text-align: center;
-  color: #283136;
+  color: var(--basic-dark);
   border: none;
   border-radius: 5px;
   padding-left: 10px;
   padding-right: 6px;
-  background: #f1f1f1;
+  background: var(--white-smoke);
 }
 
 .price-controls {
